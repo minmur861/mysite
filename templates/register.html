@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="{% static 'css/register.css'}" />
+  <link href="https://fonts.googleapis.com/css?family=Ibarra+Real+Nova&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Indie+Flower&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Amiri&display=swap" rel="stylesheet">
+  <title>Find out the compatibility</title>
+  <meta charset="utf-8">
+</head>
+<body>
+<center>
+  <form action="" method="POST">
+    {% csrf_token %}
+    <fieldset>
+
+      {{ user_form.as_table }}
+      {{ profile_form.as_table }}
+<!--      <h2><legend> Registration form </legend></h2>-->
+<!--         <p>-->
+<!--           <label for="name" id="unique">Name</label>-->
+<!--           <input type="name" class="name" name="name" value=""  placeholder="Ivan Ivanov">-->
+<!--         </p>-->
+<!--         <p>-->
+<!--           <label for="birthdate" id="unique"> Birthdate </label>-->
+<!--           <input type="date" class="birthdate" name="birthdate" value=""  placeholder="08.06.2001">-->
+<!--         </p>-->
+<!--         <label for="country" id="unique">Country</label>-->
+<!--         <select name="country">-->
+<!--           <option>Not chosen</option>-->
+<!--           <option value="Ukraine">Ukraine</option>-->
+<!--           <option value="Russia">Russia</option>-->
+<!--           <option value="Poland">Poland</option>-->
+<!--           <option value="Italy">Italy</option>-->
+<!--           <option value="Spain">Spain</option>-->
+<!--           <option value="Greece">Greece</option>-->
+<!--         </select>-->
+<!--         <p>-->
+<!--           <label for="sex" id="unique">Sex</label>-->
+<!--           <select name="Sex">-->
+<!--             <option>Not chosen</option>-->
+<!--             <option value="male">male</option>-->
+<!--             <option value="female">female</option>-->
+<!--           </select>-->
+<!--         </p>-->
+<!--         <label for="briefinform" id="unique">Comment</label>-->
+<!--         <input type="text" class="text" name="text" value="" placeholder="I like dogs and movies">-->
+<!--        <p>-->
+<!--          <label for="password" id="unique">Password</label>-->
+<!--          <input type="password" class="password" name="password" value="">-->
+<!--       </p>-->
+<!--       {{ form.as_p }}-->
+<!--       <p>-->
+       <input type="submit" class ="submit" name="submit" value="Register">
+<!--       </p>-->
+<!--      <p><a href="login.html">Sign up </a></p>-->
+
+    </fieldset>
+  </form>
+  </center>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+<head>
+  <link rel="stylesheet" href="{% static 'css/register.css' %}">
+  <link href="https://fonts.googleapis.com/css?family=Ibarra+Real+Nova&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Indie+Flower&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Amiri&display=swap" rel="stylesheet">
+  <title>Autorization</title>
+  <meta charset="utf-8">
+</head>
+<body>
+<center>
+   <form action="" method="POST">
+    {% csrf_token %}
+    <fieldset>
+      <h2><legend> Autorization form </legend></h2>
+         <p>
+           <label for="{{profile_form.user.unique}"></label>
+             {{ profile_form.as_p }}
+         </p>
+         {{ form.as_p }}
+       <p>
+         <input type="submit" class="submit" name="send" value="Sign Up">
+       </p>
+      <p><a href="goroskop/register">Register</a></p>
+    </fieldset>
+  </form>
+  </center>
+</body>
+</html>

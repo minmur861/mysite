@@ -1,0 +1,7 @@
+{% extends 'home.html' %}
+{% block content %}
+    <h3> Hello {{profile.name}}</h3>
+{% if profile.avatar %}
+<p><img scr="{{profile.avatar.url }}"> </p>
+{% endif %}
+{% endblock content %}

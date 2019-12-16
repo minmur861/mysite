@@ -1,0 +1,142 @@
+h1 {
+    font-family: 'Indie Flower', cursive;
+    display: block;
+}
+body{
+  background: url(images/wallpaper.jpg);
+  margin-left: 250px;
+  width: 1300px;
+  font-family: 'Ibarra Real Nova', serif;
+  font-size: 20px;
+  color: #FFFFFF;
+}
+form {
+  width: 570px;
+  background: url(images/wallpaper1.jpg);
+  font-family: 'Indie Flower', cursive;
+  color: #FFFFFF;
+  font-size: 30px;
+  border-color:1px solid red;
+}
+.submit{
+  display: inline-block;
+  width: 100px;
+  height: 50px;
+  line-height: 50px;
+  font-size: 20px;
+  text-align: center;
+  text-decoration: none;
+  text-shadow: 0 1px rgba(255,255,255,.2), 0 -1px rgba(0,0,0,.8);
+  outline: none;
+  border: none;
+  border-radius: 100px;
+  background:#FF0000;
+  box-shadow: inset rgba(0,0,0,.6) 0 -2px 5px, inset rgba(252,255,255,.7) 0 2px 5px, rgba(0,0,0,.8) 0 2px 5px -1px;
+  color: #FFFFFF;
+  user-select: none;
+}
+.aries{
+  font-family: 'Indie Flower', cursive;
+  color: #2ECCFA;
+  font-size: 30px;
+}
+.taurus{
+  font-family: 'Indie Flower', cursive;
+  color: #013ADF;
+  font-size: 30px;
+}
+.gemini{
+  font-family: 'Indie Flower', cursive;
+  color: #4B088A;
+  font-size: 30px;
+}
+.cancer{
+  font-family: 'Indie Flower', cursive;
+  color: #8904B1;
+  font-size: 30px;
+}
+.leo{
+  font-family: 'Indie Flower', cursive;
+  color: #FF00BF;
+  font-size: 30px;
+}
+.virgo{
+  font-family: 'Indie Flower', cursive;
+  color: #FE2E2E;
+  font-size: 30px;
+}
+.libra{
+  font-family: 'Indie Flower', cursive;
+  color: #FF4000;
+  font-size: 30px;
+}
+.scorpio{
+  font-family: 'Indie Flower', cursive;
+  color: #FE642E;
+  font-size: 30px;
+}
+.sagittarius{
+  font-family: 'Indie Flower', cursive;
+  color: #FFBF00;
+  font-size: 30px;
+}
+.capricorn{
+  font-family: 'Indie Flower', cursive;
+  color: #DBA901;
+  font-size: 30px;
+}
+.aquarius{
+  font-family: 'Indie Flower', cursive;
+  color: #F7FE2E;
+  font-size: 30px;
+}
+.pisces{
+  font-family: 'Indie Flower', cursive;
+  color: #40FF00;
+  font-size: 30px;
+}
+.headers
+{
+font-family: 'Indie Flower', cursive;
+color: #644480;
+font-size: 30px;
+}
+.menu ul{
+  list-style: none;
+}
+.menu > ul{
+  display:flex;
+  justify-content:center;
+}
+.menu > ul li a{
+  display:block;
+  background: url(images/wallpaper.jpg);
+  padding: 18px;
+  font-size: 20px;
+  color:#FFFFFF;
+  font-family: 'Indie Flower', cursive;
+  text-decoration:none;
+}
+.menu> ul li{
+  position: relative;
+  border-right: 1px solid red;
+  border-left: 1px solid red;
+  border-top:  1px solid red;
+  border-bottom:  1px solid red;
+}
+.menu li a:hover{
+  background:red;
+  color: #FFFFFF;
+  box-shadow: 1px 5px 10px -5px black;
+}
+.menu li ul {
+  position: absolute;
+  display: none;
+}
+.menu li>ul li{
+  padding: 0px;
+  text-transform:none;
+}
+.menu li:hover >ul{
+display:block;
+}

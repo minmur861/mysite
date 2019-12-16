@@ -1,0 +1,33 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" href="{% static 'css/register.css'}" />
+  <link href="https://fonts.googleapis.com/css?family=Ibarra+Real+Nova&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Indie+Flower&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Amiri&display=swap" rel="stylesheet">
+  <title>Autorization</title>
+  <meta charset="utf-8">
+</head>
+<body>
+<center>
+  <form>
+    <fieldset>
+      <h2><legend> Autorization form </legend></h2>
+         <p>
+           <label for="name" id="unique">Name</label>
+           <input type="name" class="name" name="name" value=""  placeholder="Ivan Ivanov">
+         </p>
+        <p>
+          <label for="password" id="unique">Password</label>
+          <input type="password" class="password" name="password" value="">
+       </p>
+       <p>
+         <input type="submit" class="submit" name="send" value="Sign Up">
+       </p>
+      <p><a href="register.html">Refister</a></p>
+    </fieldset>
+  </form>
+  </center>
+</body>
+</html>

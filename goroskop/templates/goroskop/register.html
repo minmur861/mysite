@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+<head>
+  <link rel="stylesheet" href="{% static 'css/register.css' %}">
+  <link href="https://fonts.googleapis.com/css?family=Ibarra+Real+Nova&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Indie+Flower&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Amiri&display=swap" rel="stylesheet">
+  <title>Find out the compatibility</title>
+  <meta charset="utf-8">
+</head>
+<body>
+<center>
+  <form action=" " method="POST" enctype="multipart/form-data">
+    {% csrf_token %}
+    <fieldset>
+         <h2><legend> Registration form </legend></h2>
+          <p>
+           <label for="{{user_form.user.unique }}" ></label>
+           {{ user_form.as_p }}
+         </p>
+         <p>
+           <label for="{{sex_form.sex.unique }}"></label>
+               {{ sex_form.as_p }}
+         </p>
+        <p>
+         <label for="{{country_form.country.unique }}" ></label>
+         {{ country_form.as_p }}
+        </p>
+        <p>
+           <label for="{{profile_form.user.unique }}"></label>
+            {{ profile_form.as_p }}
+         </p>
+       {{ form.as_p }}
+       <p>
+         <input type="submit" class ="submit" name="submit" value="Register">
+        </p>
+          <p><a href="login.html">Sign up </a></p>
+    </fieldset>
+  </form>
+  </center>
+</body>
+</html>

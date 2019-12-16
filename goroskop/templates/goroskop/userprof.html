@@ -1,0 +1,193 @@
+{% load static %}
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" href="{% static 'css/home.css' %}">
+    <link href="https://fonts.googleapis.com/css?family=Ibarra+Real+Nova&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+</head>
+  <style>
+                .menu ul{
+              list-style: none;
+            }
+            .menu > ul{
+              display:flex;
+              justify-content:center;
+            }
+            .menu > ul li a{
+              display:block;
+              background: url(images/wallpaper.jpg);
+              padding: 13px;
+              font-size: 20px;
+              color:#FFFFFF;
+              font-family: 'Indie Flower', cursive;
+              text-decoration:none;
+            }
+            .menu> ul li{
+              position: relative;
+              border-right: 1px solid red;
+              border-left: 1px solid red;
+              border-top:  1px solid red;
+              border-bottom:  1px solid red;
+            }
+            .menu li a:hover{
+              background:red;
+              color: #FFFFFF;
+              box-shadow: 1px 5px 10px -5px black;
+            }
+            .menu li ul {
+              position: absolute;
+              display: none;
+            }
+            .menu li>ul li{
+              padding: 0px;
+              text-transform:none;
+            }
+            .menu li:hover >ul{
+            display:block;
+            }
+
+               .img1 {
+               position: absolute;
+               top:200px;
+               left: 900px;
+                padding:2px 2x 2px 2px;
+                background: red;
+               }
+               .p {
+               position: absolute;
+               top:200px;
+               left: 500px;
+                float:left;
+                padding:2px 2x 2px 2px;
+                color:#FAFAFA;
+                font-size:25pt;
+                font-family: 'Indie Flower', cursive;
+               }
+               form{
+                background-color: lime;
+               }
+               .img1 {
+               position: absolute;
+               top:200px;
+               left: 900px;
+                padding:2px 2x 2px 2px;
+                background: red;
+               }
+               h1{
+               color:red;
+               }
+               .p {
+               position: absolute;
+               top:200px;
+               left: 450px;
+                float:left;
+                padding:2px 2x 2px 2px;
+                color:#FAFAFA;
+                font-size:25pt;
+                font-family: 'Indie Flower', cursive;
+               }
+               h2{
+                  font-family: 'Indie Flower', cursive;
+                  display: block;
+                   position: absolute;
+                   top:750px;
+                   font-size:30pt;
+                   left:750px;
+                   color: red;
+               }
+              .compat{
+               font-family: 'Indie Flower', cursive;
+               font-size:20pt;
+               position: relative;
+               top:700px;
+               left: 400px;
+               }
+                form{
+                background-color: lime;
+               }
+              </style>
+<body align="justify">
+  <nav class="menu">
+    <ul>
+      <li><a href=http://127.0.0.1:8000/goroskop/>HOME PAGE</a> </li>
+      <li><a href="#">ZODIAC SIGNS</a>
+        <ul>
+          <li><a href="http://127.0.0.1:8000/goroskop/#aries">ARIES</a></li>
+          <li><a href="http://127.0.0.1:8000/goroskop/#taurus">TAURUS</a></li>
+          <li><a href="http://127.0.0.1:8000/goroskop/#gemini">GEMINI</a></li>
+          <li><a href="http://127.0.0.1:8000/goroskop/#cancer">CANCER</a></li>
+          <li><a href="http://127.0.0.1:8000/goroskop/#leo">lEO</a></li>
+          <li><a href="http://127.0.0.1:8000/goroskop/#virgo">VIRGO</a></li>
+          <li><a href="http://127.0.0.1:8000/goroskop/#libra">LIBRA</a></li>
+          <li><a href="http://127.0.0.1:8000/goroskop/#scorpion">SCORPIO</a></li>
+          <li><a href="http://127.0.0.1:8000/goroskop/#sagittarius">SAGITTARIUS</a></li>
+          <li><a href="http://127.0.0.1:8000/goroskop/#capricon">CAPRICORN</a></li>
+          <li><a href="http://127.0.0.1:8000/goroskop/#aquarius">AQUARIUS</a></li>
+          <li><a href="http://127.0.0.1:8000/goroskop/#piesces">PISCES</a></li>
+      </ul>
+   </li>
+   <li><a href="http://127.0.0.1:8000/goroskop/#compatibility"> COMPATIBILITY</a></li>
+   <li><a href="#"> ELEMENTS OF THE ZODIAC SIGNS</a>
+       <ul>
+         <li><a href="http://127.0.0.1:8000/goroskop/#water">WATER SIGNS</a></li>
+         <li><a href="http://127.0.0.1:8000/goroskop/#fire">FIRE SIGNS</a></li>
+         <li><a href="http://127.0.0.1:8000/goroskop/#earth">EARTH SIGNS</a></li>
+         <li><a href="http://127.0.0.1:8000/goroskop/#air">AIR SIGNS</a></li>
+      </ul>
+   </li>
+   <li><a href="http://127.0.0.1:8000/goroskop/#believe"> WHY DO WE BELIEVE IN ASTROLOGY</a></li>
+   <li><a href="#">ASTROLOGY</a>
+     <ul>
+       <li><a href="http://127.0.0.1:8000/goroskop/#water">CHINESE ASTROLOGY</a></li>
+       <li><a href="http://127.0.0.1:8000/goroskop/#earth">VEDIC ASTROLOGY </a></li>
+       <li><a href="http://127.0.0.1:8000/goroskop/#fire">MAYAN ASTROLOGY</a></li>
+    </ul>
+   </li>
+   <li><a href=http://127.0.0.1:8000/goroskop/logout>LOGOUT</a> </li>
+</ul>
+  </nav>
+  <center><h1>Profile</h1></center>
+  {% block content %}
+            {% csrf_token %}
+    {% if posts.avatar%}
+
+            <form>
+            <img class ="img1" src="{{MEDIA_URL}}{{posts.avatar.url}}" align="left" hspace="10" vspace="10" width="430" height="430">
+            <span class ="p">
+            <p> Username: {{posts.user}}</p>
+            <p>Age: {{posts.age}}</p>
+            <p>Zodiac: {{posts.zodiac}}</p>
+            <p>Country: {{posts.country}}</p>
+            <p>Hobby: {{posts.hobby}}</p>
+             </span>
+             </form>
+    {% endif %}
+    {% if not posts.avatar%}
+            <form>
+            <img class ="img1" src = "{% static 'images/notfound.png' %}" align="left" hspace="10" vspace="10" width="430" height="430">
+            <span class ="p">
+            <p> Username: {{posts.user}}</p>
+            <p>Age: {{posts.age}}</p>
+            <p>Sex: {{posts.sex}}</p>
+            <p>Zodiac: {{posts.zodiac}}</p>
+            <p>Country: {{posts.country}}</p>
+            <p>Hobby: {{posts.hobby}}</p>
+             </span>
+             </form>
+    {% endif %}
+ {% endblock content %}
+    <center><h2>Compatible Users</h2></center>
+  {% for profile in grls %}
+            <figure class="compat">
+            <p>Username: {{profile.user}},   Age: {{profile.age}}, <a href=http://127.0.0.1:8000/goroskop/profiles/{{profile.slug}}>link</a> </p>
+            </figure>
+  {% endfor %}
+        <p>
+           <label for="{{profile_form.user.unique }}"></label>
+            {{ profile_form.as_p }}
+         </p>
+       {{ form.as_p }}
+</body>
+</html>
+
